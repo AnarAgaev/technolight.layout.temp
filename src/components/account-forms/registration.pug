@@ -1,0 +1,28 @@
+.account-form
+    .account-form__dialog
+        .account-form__header
+            h3.account-form__title Регистрация
+            p.account-form__subtitle Для регистрации укажите ваш Емейл и Пароль
+
+        .account-form__body
+            form.account-form__form(action="" data-form-type="registration")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        i.mail
+                        input(type="text" name="email" placeholder="Емейл")
+                        span.error-message Текст ошибки
+
+                    label
+                        i.pass
+                        input(type="password" name="pass" placeholder="Пароль")
+                        span.error-message Текст ошибки
+                        span.help Должен содержать минимум 8 символов
+                        span.toggle-visible-pass
+
+                button.btn.btn_block.btn_dark(type="submit")
+                    span Зарегистрироваться
+
+        .account-form__footer
+            a.account-form__link(href="#") Войти
+            a.account-form__link(href="#") Перейти на главную

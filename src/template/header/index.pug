@@ -1,0 +1,172 @@
+.header__modal-back
+
+.container
+    .header__content
+        a.header__logo.logo-light(href="#")
+
+        nav.header__nav
+            .header__nav-caption.d-lg-none
+                span.header__nav-logo.logo-dark
+                button.header__nav-close
+
+            ul.header__nav-list
+                // Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner
+                // Для раскрытого пункта меню, добавлять класс .dropped
+                li.header__nav-item.header__nav-item_prod.header__nav-item_with-inner
+                    i
+                    // Активному пункту меню добавляем класс .active
+                    // Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ
+                    button.header__nav-link.header__nav-link_product
+                        i.d-lg-none
+                        span Продукция
+
+                    // Для открытого подменю, добавляем класс .open
+                    .header__nav-collapse.header__nav-collapse_product.collapse
+                        .collapse__inner
+                            button.header__nav-close.d-none.d-lg-block
+                            ul.header__nav-sublist
+                                // У списка подменю с заголовком у первого li класс .header__nav-subtitle
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Трековые системы
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Треки
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Светильники
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Аксессуары
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Комплектующие
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Блоки питания
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Блоки питания шины
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Управление
+
+                            ul.header__nav-sublist
+                                // У списка подменю с заголовком у первого li класс .header__nav-subtitle
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Модульные светильники
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Светильники без видимой рамки
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Светильники с видимой рамкой
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Монтажные комплекты
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Декоративные рамки
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Комплектующие
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Аксессуары
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Светодиодные модули
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Драйверы
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Блоки питания шины
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Управление
+
+                            ul.header__nav-sublist
+                                // У списка подменю с заголовком у первого li класс .header__nav-subtitle
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Вспомогательная продукция
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Профильные решения
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Блоки питания шины
+                                li.header__nav-subitem
+                                    a.header__nav-sublink(href="#") Управление
+
+                li.header__nav-item
+                    a.header__nav-link.header__nav-link_delivery(href="#")
+                        i.d-lg-none
+                        span Доставка и оплата
+                li.header__nav-item
+                    a.header__nav-link.header__nav-link_buy(href="#")
+                        i.d-lg-none
+                        span Где купить
+                li.header__nav-item
+                    a.header__nav-link.header__nav-link_configurator(href="#")
+                        i.d-lg-none
+                        span Конфигуратор
+                li.header__nav-item.header__nav-item_company.header__nav-item_with-inner
+                    i
+                    // Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ
+                    button.header__nav-link.header__nav-link_company
+                        i.d-lg-none
+                        span Компания
+                    .header__nav-collapse.header__nav-collapse_company.collapse
+                        .collapse__inner
+                            button.header__nav-close.d-none.d-lg-block
+                            ul.header__nav-sublist
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Обмен и возврат
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Гарантия качества
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Наши проекты
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Жизнь компании
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Торговая марка
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Дизайн и качество
+                                li.header__nav-subtitle
+                                    a.header__nav-sublink(href="#") Контакты
+
+        ul.header__buttons
+            li.d-none.d-lg-block
+                a.header__buttons-link.header__buttons-link_call(href="tel:+9200000000")
+                    i
+            li
+                button.header__buttons-link.header__buttons-link_search
+                    i
+            li
+                a.header__buttons-link.header__buttons-link_favorites(href="#")
+                    i
+                        span.header__buttons-count 23
+            li
+                a.header__buttons-link.header__buttons-link_cart(href="#")
+                    i
+                        span.header__buttons-count#cartProductCount 7
+            li.d-none.d-lg-block
+                a.header__buttons-link.header__buttons-link_account(href="#")
+                    i
+
+    // По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт
+    .header__search.disable
+        form.header__search-form
+            label
+                i
+                input.header__search-input(type="text" placeholder="Поиск")
+                span.header__search-reset(type="reset")
+            button.header__search-close(type="button") Отмена
+
+        .header__search-hints
+            .header__search-helps
+                span Трек для натяжного потолка
+                span Софт
+                span Лайн 300
+                span Блок питания линейный
+                span Торцевая заглушка для трека
+                span Трек встраиваемый в гипсокартон
+
+            .header__search-links
+                a(href="#") Торцевая заглушка для трека
+                a(href="#") Лайн 300
+                a(href="#") Блок питания линейный
+                a(href="#") Трек встраиваемый в гипсокартон
+                a(href="#") Трек под нятяжной потолоку купить
+                a(href="#") Споты для трека в Москве
+
+            .header__search-categories
+                a(href="#")
+                    p Светильники с рамкой
+                    span Категория
+                a(href="#")
+                    p Светильники с рамкой
+                    span Категория
+
+    .header__msg-container

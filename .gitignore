@@ -1,0 +1,15 @@
+node_modules/
+.vscode/
+.idea/
+build/
+dist/
+
+src/components/product-component/*
+!src/components/product-component/src/
+!src/components/product-component/.eslintrc.cjs
+!src/components/product-component/index.html
+!src/components/product-component/package-lock.json
+!src/components/product-component/package.json
+!src/components/product-component/tsconfig.json
+!src/components/product-component/tsconfig.node.json
+!src/components/product-component/vite.config.ts
